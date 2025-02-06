@@ -1,6 +1,6 @@
 # List Exercise
 
-# a list with 6 car models
+# Create a list with 6 car models
 car_models = ["Tesla", "Isuzu", "Toyota", "Mercedes", "Volkswagen", "Honda"]
 
 # Print all items in the list
@@ -20,15 +20,17 @@ print(f"The first and last items in the list are: {car_models[0]}, {car_models[-
 # Create a tuple with five menu items
 menu = ("Bruschetta", "Spring Rolls", "Sashimi", "Lobster", "Brownies")
 
-# Printing each item on the menu using a loop
+# Print each item on the menu using a for loop 
 print("Original menu:")
 for item in menu:
     print(item)
 
-# Update the menu by replacing two items
+# Update the menu by creating a new tuple with two replaced items
 updated_menu = ("Bruschetta", "Spring Rolls", "Grilled Salmon", "Steak", "Brownies")
 
-# Print each item on the revised menu using a loop
+# Print the revised menu using a while loop 
 print("Updated menu:")
-for item in updated_menu:
-    print(item)
+i = 0
+while i < len(updated_menu):
+    print(updated_menu[i])
+    i += 1
